@@ -37,7 +37,7 @@ public class TestBase {
 			driver = new ChromeDriver();
 		} else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Ankit\\Documents\\Tools\\geckodriver-v0.26.0-win64\\geckodriver.exe");	
-			WebDriver driver = new FirefoxDriver(); 
+			driver = new FirefoxDriver(); 
 		}
 		
 		driver.manage().window().maximize();

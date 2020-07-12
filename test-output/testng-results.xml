@@ -1,49 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36480" started-at="2020-07-11T18:00:36 IST" finished-at="2020-07-11T18:01:13 IST">
+  <suite name="Default suite" duration-ms="26041" started-at="2020-07-12T18:00:11 IST" finished-at="2020-07-12T18:00:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36480" started-at="2020-07-11T18:00:36 IST" finished-at="2020-07-11T18:01:13 IST">
-      <class name="com.flipkart.qa.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="setUp" is-config="true" duration-ms="11637" started-at="2020-07-11T18:00:36 IST" finished-at="2020-07-11T18:00:48 IST">
+    <test name="Default test" duration-ms="26041" started-at="2020-07-12T18:00:11 IST" finished-at="2020-07-12T18:00:37 IST">
+      <class name="com.flipkart.qa.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@7f13d6e]" name="setUp" is-config="true" duration-ms="11568" started-at="2020-07-12T18:00:11 IST" finished-at="2020-07-12T18:00:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="loginPageTitleTest" duration-ms="174" started-at="2020-07-11T18:00:48 IST" finished-at="2020-07-11T18:00:48 IST">
+        <test-method status="PASS" signature="validateMyAccountLinkTest()[pri:1, instance:com.flipkart.qa.tests.HomePageTest@7f13d6e]" name="validateMyAccountLinkTest" duration-ms="1821" started-at="2020-07-12T18:00:23 IST" finished-at="2020-07-12T18:00:25 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="tearDown" is-config="true" duration-ms="1019" started-at="2020-07-11T18:00:48 IST" finished-at="2020-07-11T18:00:49 IST">
+        </test-method> <!-- validateMyAccountLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@7f13d6e]" name="tearDown" is-config="true" duration-ms="900" started-at="2020-07-12T18:00:25 IST" finished-at="2020-07-12T18:00:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="setUp" is-config="true" duration-ms="9146" started-at="2020-07-11T18:00:49 IST" finished-at="2020-07-11T18:00:58 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@7f13d6e]" name="setUp" is-config="true" duration-ms="10767" started-at="2020-07-12T18:00:26 IST" finished-at="2020-07-12T18:00:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="flipkartLogoTest()[pri:2, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="flipkartLogoTest" duration-ms="733" started-at="2020-07-11T18:00:58 IST" finished-at="2020-07-11T18:00:59 IST">
+        <test-method status="FAIL" signature="validateTelevisionLinkTest()[pri:2, instance:com.flipkart.qa.tests.HomePageTest@7f13d6e]" name="validateTelevisionLinkTest" duration-ms="6" started-at="2020-07-12T18:00:36 IST" finished-at="2020-07-12T18:00:36 IST">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException
+at java.lang.Object.wait(Native Method)
+at com.flipkart.qa.pages.HomePage.clickOnTelevisionsLink(HomePage.java:38)
+at com.flipkart.qa.tests.HomePageTest.validateTelevisionLinkTest(HomePageTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flipkartLogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="tearDown" is-config="true" duration-ms="1389" started-at="2020-07-11T18:00:59 IST" finished-at="2020-07-11T18:01:00 IST">
+        </test-method> <!-- validateTelevisionLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@7f13d6e]" name="tearDown" is-config="true" duration-ms="891" started-at="2020-07-12T18:00:36 IST" finished-at="2020-07-12T18:00:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="setUp" is-config="true" duration-ms="10212" started-at="2020-07-11T18:01:00 IST" finished-at="2020-07-11T18:01:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="loginTest" duration-ms="1149" started-at="2020-07-11T18:01:10 IST" finished-at="2020-07-11T18:01:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@7f13d6e]" name="tearDown" is-config="true" duration-ms="924" started-at="2020-07-11T18:01:12 IST" finished-at="2020-07-11T18:01:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.flipkart.qa.tests.LoginPageTest -->
+      </class> <!-- com.flipkart.qa.tests.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,16 +10,16 @@ public class LoginPage extends TestBase {
 	
 	//Page Factory - Object Repository (OR):
 	
-	@FindBy(xpath = "//input[@class=\"_2zrpKA _1dBPDZ\"]")
+	@FindBy(xpath = "//input[@class='_2zrpKA _1dBPDZ']")
 	WebElement email;
 	
-	@FindBy(xpath = "//input[@type=\"password\"]")
+	@FindBy(xpath = "//input[@type='password']")
 	WebElement password;
 	
-	@FindBy(xpath = "//button[@class=\"_2AkmmA _1LctnI _7UHT_c\"]")
+	@FindBy(xpath = "//button[@class='_2AkmmA _1LctnI _7UHT_c']")
 	WebElement loginBtn;
 	
-	@FindBy(xpath = "//img[contains(@title,'Flipkart')]")
+	@FindBy(xpath = "//img[@title='Flipkart']")
 	WebElement flipkartLogo;
 	
 	

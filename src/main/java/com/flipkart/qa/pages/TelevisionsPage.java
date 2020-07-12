@@ -1,5 +1,7 @@
 package com.flipkart.qa.pages;
 
-public class TelevisionsPage {
+import com.flipkart.qa.base.TestBase;
+
+public class TelevisionsPage extends TestBase{
 
 }
