@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Ankit\AppData\Local\Temp\testng-eclipse--158294071\testng-customsuite.xml</span>
+                    <span>C:\Users\Ankit\AppData\Local\Temp\testng-eclipse--642727087\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.flipkart.qa.tests.HomePageTest" hash-for-method="validateTelevisionLinkTest">validateTelevisionLinkTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.flipkart.qa.tests.HomePageTest" hash-for-method="searchAnItemTest">searchAnItemTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -114,6 +114,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.flipkart.qa.tests.HomePageTest" hash-for-method="validateElectronicsSectionTest">validateElectronicsSectionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.flipkart.qa.tests.HomePageTest" hash-for-method="validateMyAccountLinkTest">validateMyAccountLinkTest</a> <!-- method navigator-link -->
@@ -139,13 +144,43 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateTelevisionLinkTest">
-                  </a> <!-- validateTelevisionLinkTest -->
-                  <span class="method-name">validateTelevisionLinkTest</span>
-                  <div class="stack-trace">java.lang.IllegalMonitorStateException
-	at java.lang.Object.wait(Native Method)
-	at com.flipkart.qa.pages.HomePage.clickOnTelevisionsLink(HomePage.java:38)
-	at com.flipkart.qa.tests.HomePageTest.validateTelevisionLinkTest(HomePageTest.java:38)
+                  <a name="searchAnItemTest">
+                  </a> <!-- searchAnItemTest -->
+                  <span class="method-name">searchAnItemTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.116)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANKIT-PC&apos;, ip: &apos;172.17.69.225&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46302df087096f006bf5ade25a1aff2b
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at com.flipkart.qa.pages.HomePage.searchAnItem(HomePage.java:48)
+	at com.flipkart.qa.tests.HomePageTest.searchAnItemTest(HomePageTest.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -188,6 +223,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="validateElectronicsSectionTest">
+                  </a> <!-- validateElectronicsSectionTest -->
+                  <span class="method-name">validateElectronicsSectionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validateMyAccountLinkTest">
                   </a> <!-- validateMyAccountLinkTest -->
                   <span class="method-name">validateMyAccountLinkTest</span>
@@ -198,7 +240,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ankit\AppData\Local\Temp\testng-eclipse--158294071\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Ankit\AppData\Local\Temp\testng-eclipse--642727087\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -247,20 +289,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateMyAccountLinkTest')
+data.setCell(0, 1, 'searchAnItemTest')
 data.setCell(0, 2, 'com.flipkart.qa.tests.HomePageTest')
-data.setCell(0, 3, 1821);
+data.setCell(0, 3, 12663);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateTelevisionLinkTest')
+data.setCell(1, 1, 'validateMyAccountLinkTest')
 data.setCell(1, 2, 'com.flipkart.qa.tests.HomePageTest')
-data.setCell(1, 3, 6);
+data.setCell(1, 3, 1912);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateElectronicsSectionTest')
+data.setCell(2, 2, 'com.flipkart.qa.tests.HomePageTest')
+data.setCell(2, 3, 84);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -293,25 +339,37 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateMyAccountLinkTest</span>
-                <span class="method-start">11570 ms</span>
+                <span class="method-start">11514 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13404 ms</span>
+                <span class="method-start">13438 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14307 ms</span>
+                <span class="method-start">14354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateElectronicsSectionTest</span>
+                <span class="method-start">24964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25052 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25978 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validateTelevisionLinkTest</span>
-                <span class="method-start">25074 ms</span>
+                <span class="method-name">searchAnItemTest</span>
+                <span class="method-start">36037 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25087 ms</span>
+                <span class="method-start">48700 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

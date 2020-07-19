@@ -2,6 +2,6 @@ package com.flipkart.qa.pages;
 
 import com.flipkart.qa.base.TestBase;
 
-public class TelevisionsPage extends TestBase{
+public class MobilesPage extends TestBase {
 
 }

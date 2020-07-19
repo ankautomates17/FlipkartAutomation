@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 import com.flipkart.qa.base.TestBase;
 import com.flipkart.qa.pages.HomePage;
 import com.flipkart.qa.pages.LoginPage;
-import com.flipkart.qa.pages.TelevisionsPage;
+import com.flipkart.qa.pages.MobilesPage;
 
 public class HomePageTest extends TestBase {
 
 	LoginPage loginPage;
 	HomePage homePage;
-	TelevisionsPage televisionsPage;
+//	MobilesPage mobilesPage;
 
 	public HomePageTest() {
 		super();
@@ -24,7 +24,7 @@ public class HomePageTest extends TestBase {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-		televisionsPage = new TelevisionsPage();
+//		mobilesPage = new MobilesPage();
 		homePage = loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
 	}
 
@@ -32,16 +32,22 @@ public class HomePageTest extends TestBase {
 	public void validateMyAccountLinkTest() {
 		Assert.assertTrue(homePage.validateMyAccountLink());
 	}
-
+	
 	@Test(priority=2)
-	public void validateTelevisionLinkTest() {
-		televisionsPage = homePage.clickOnTelevisionsLink();
+	public void validateElectronicsSectionTest() {
+		Assert.assertTrue(homePage.validateElectronicsSection());
 	}
 
-
-
-
-
+	@Test(priority=3)
+	public void searchAnItemTest() {
+		homePage.searchAnItem();
+	}
+	
+	/*	@Test(priority=4)
+	public void mouseHoverOnMobilesLinkTest() {
+		mobilesPage = homePage.mouseHoverOnMobilesLink();
+	}
+*/
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

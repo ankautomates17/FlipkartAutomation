@@ -5,7 +5,7 @@
     <classes>
       <class name="com.flipkart.qa.tests.HomePageTest">
         <methods>
-          <include name="validateTelevisionLinkTest"/>
+          <include name="searchAnItemTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
