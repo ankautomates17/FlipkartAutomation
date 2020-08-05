@@ -8,15 +8,15 @@ import org.testng.annotations.Test;
 import com.flipkart.qa.base.TestBase;
 import com.flipkart.qa.pages.HomePage;
 import com.flipkart.qa.pages.LoginPage;
-import com.flipkart.qa.pages.MobilesPage;
+import com.flipkart.qa.pages.MyProfilePage;
 
-public class HomePageTest extends TestBase {
-
+public class MyProfilePageTest extends TestBase {
+	
 	LoginPage loginPage;
 	HomePage homePage;
-//	MobilesPage mobilesPage;
-
-	public HomePageTest() {
+	MyProfilePage myProfilePage;
+	
+	public MyProfilePageTest() {
 		super();
 	}
 
@@ -24,34 +24,26 @@ public class HomePageTest extends TestBase {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-//		mobilesPage = new MobilesPage();
 		homePage = loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
+		myProfilePage = homePage.clickOnMyProfile();
 	}
 
 	@Test(priority=1)
-	public void validateElectronicsSectionTest() {
-		Assert.assertTrue(homePage.validateElectronicsSection());
+	public void validateManageAddressesLinkTest() {
+		Assert.assertTrue(myProfilePage.validateManageAddressesLink());
 	}
 
 	@Test(priority=2)
-	public void searchAnItemTest() {
-		homePage.searchAnItem();
+	public void clickOnManageAddressesLinkTest() {
+		myProfilePage.clickOnManageAddressesLink();
 	}
 	
-	@Test(priority=3)
-	public void validateMyProfileTest() {
-		homePage.clickOnMyProfile();
-	}
-	
-	/*	@Test(priority=4)
-	public void mouseHoverOnMobilesLinkTest() {
-		mobilesPage = homePage.mouseHoverOnMobilesLink();
-	}
-*/
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
 
+
+	
 
 }
