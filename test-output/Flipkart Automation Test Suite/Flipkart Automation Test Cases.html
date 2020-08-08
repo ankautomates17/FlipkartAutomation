@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Flipkart Automation Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 25 22:10:27 IST 2020</td>
+<td>Started on:</td><td>Sat Aug 08 22:59:47 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>116 seconds (116892 ms)</td>
+<tr><td>Total time:</td><td>145 seconds (145627 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,48 +76,66 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.flipkart.qa.tests.HomePageTest.searchAnItemTest()'><b>searchAnItemTest</b><br>Test class: com.flipkart.qa.tests.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.flipkart.qa.pages.HomePage.searchAnItem(HomePage.java:48)
-	at com.flipkart.qa.tests.HomePageTest.searchAnItemTest(HomePageTest.java:43)
-	at java.util.ArrayList.forEach(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]&quot;}
-  (Session info: chrome=84.0.4147.89)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ANKIT-PC&apos;, ip: &apos;172.17.69.225&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2cc1baecb2a7d84513db214858ea1b9b
-*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0f653eb85c8991773db7c58101d13ecd
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace290096578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace290096578'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.flipkart.qa.pages.HomePage.searchAnItem(HomePage.java:48)
-	at com.flipkart.qa.tests.HomePageTest.searchAnItemTest(HomePageTest.java:43)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.flipkart.qa.pages.HomePage.searchAnItem(HomePage.java:46)
+	at com.flipkart.qa.tests.HomePageTest.searchAnItemTest(HomePageTest.java:38)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1730337646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730337646'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANKIT-PC&apos;, ip: &apos;172.17.69.225&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0f653eb85c8991773db7c58101d13ecd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.flipkart.qa.pages.HomePage.searchAnItem(HomePage.java:46)
+	at com.flipkart.qa.tests.HomePageTest.searchAnItemTest(HomePageTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -146,43 +164,9 @@ Session ID: 2cc1baecb2a7d84513db214858ea1b9b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]&quot;}
-  (Session info: chrome=84.0.4147.89)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ANKIT-PC&apos;, ip: &apos;172.17.69.225&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2cc1baecb2a7d84513db214858ea1b9b
-*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Apple iPhone 7 (Black, 32 GB)&apos;)]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
 </pre></div></td>
-<td>42</td>
-<td>com.flipkart.qa.tests.HomePageTest@6895a785</td></tr>
+<td>3</td>
+<td>com.flipkart.qa.tests.HomePageTest@1f57539</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -192,30 +176,55 @@ Session ID: 2cc1baecb2a7d84513db214858ea1b9b
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.flipkart.qa.tests.MyProfilePageTest.clickOnManageAddressesLinkTest()'><b>clickOnManageAddressesLinkTest</b><br>Test class: com.flipkart.qa.tests.MyProfilePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.flipkart.qa.tests.MyProfilePageTest@76f2b07d</td></tr>
+<tr>
 <td title='com.flipkart.qa.tests.LoginPageTest.flipkartLogoTest()'><b>flipkartLogoTest</b><br>Test class: com.flipkart.qa.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.flipkart.qa.tests.LoginPageTest@48503868</td></tr>
+<td>com.flipkart.qa.tests.LoginPageTest@e320068</td></tr>
 <tr>
 <td title='com.flipkart.qa.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.flipkart.qa.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.flipkart.qa.tests.LoginPageTest@48503868</td></tr>
+<td>com.flipkart.qa.tests.LoginPageTest@e320068</td></tr>
 <tr>
 <td title='com.flipkart.qa.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.flipkart.qa.tests.LoginPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.flipkart.qa.tests.LoginPageTest@48503868</td></tr>
+<td>1</td>
+<td>com.flipkart.qa.tests.LoginPageTest@e320068</td></tr>
 <tr>
 <td title='com.flipkart.qa.tests.HomePageTest.validateElectronicsSectionTest()'><b>validateElectronicsSectionTest</b><br>Test class: com.flipkart.qa.tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.flipkart.qa.tests.HomePageTest@6895a785</td></tr>
+<td>com.flipkart.qa.tests.HomePageTest@1f57539</td></tr>
 <tr>
-<td title='com.flipkart.qa.tests.HomePageTest.validateMyAccountSectionTest()'><b>validateMyAccountSectionTest</b><br>Test class: com.flipkart.qa.tests.HomePageTest</td>
+<td title='com.flipkart.qa.tests.MyProfilePageTest.validateManageAddressesLinkTest()'><b>validateManageAddressesLinkTest</b><br>Test class: com.flipkart.qa.tests.MyProfilePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.flipkart.qa.tests.MyProfilePageTest@76f2b07d</td></tr>
+<tr>
+<td title='com.flipkart.qa.tests.HomePageTest.validateMyProfileTest()'><b>validateMyProfileTest</b><br>Test class: com.flipkart.qa.tests.HomePageTest</td>
 <td></td>
 <td>2</td>
-<td>com.flipkart.qa.tests.HomePageTest@6895a785</td></tr>
+<td>com.flipkart.qa.tests.HomePageTest@1f57539</td></tr>
+<tr>
+<td title='com.flipkart.qa.tests.ManageAddressesPageTest.validateaddNewAddressTest()'><b>validateaddNewAddressTest</b><br>Test class: com.flipkart.qa.tests.ManageAddressesPageTest<br>Parameters: Ank, 9.87456321E9, 201001.0, raj comp, 24/f, tronyuin</td>
+<td></td>
+<td>1</td>
+<td>com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec</td></tr>
+<tr>
+<td title='com.flipkart.qa.tests.ManageAddressesPageTest.validateaddNewAddressTest()'><b>validateaddNewAddressTest</b><br>Test class: com.flipkart.qa.tests.ManageAddressesPageTest<br>Parameters: Raj, 9.87514263E9, 201003.0, raj comp, 32/7, bikhar</td>
+<td></td>
+<td>1</td>
+<td>com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec</td></tr>
+<tr>
+<td title='com.flipkart.qa.tests.ManageAddressesPageTest.validateaddNewAddressTest()'><b>validateaddNewAddressTest</b><br>Test class: com.flipkart.qa.tests.ManageAddressesPageTest<br>Parameters: Gaur, 9.63258741E9, 201009.0, vijaynagar, 64/2, panchwati</td>
+<td></td>
+<td>1</td>
+<td>com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec</td></tr>
 </table><p>
 </body>
 </html>

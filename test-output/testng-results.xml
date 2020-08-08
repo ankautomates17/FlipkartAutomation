@@ -1,17 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49962" started-at="2020-08-05T15:18:53 IST" finished-at="2020-08-05T15:19:43 IST">
+  <suite name="Flipkart Automation Test Suite" duration-ms="145627" started-at="2020-08-08T22:59:47 IST" finished-at="2020-08-08T23:02:12 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49962" started-at="2020-08-05T15:18:53 IST" finished-at="2020-08-05T15:19:43 IST">
-      <class name="com.flipkart.qa.tests.ManageAddressesPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="setUp" is-config="true" duration-ms="14723" started-at="2020-08-05T15:18:55 IST" finished-at="2020-08-05T15:19:09 IST">
+    <test name="Flipkart Automation Test Cases" duration-ms="145627" started-at="2020-08-08T22:59:47 IST" finished-at="2020-08-08T23:02:12 IST">
+      <class name="com.flipkart.qa.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="setUp" is-config="true" duration-ms="11426" started-at="2020-08-08T22:59:47 IST" finished-at="2020-08-08T22:59:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateaddNewAddressTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="validateaddNewAddressTest" duration-ms="1576" started-at="2020-08-05T15:19:09 IST" data-provider="getFlipkartTestData" finished-at="2020-08-05T15:19:11 IST">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="loginPageTitleTest" duration-ms="176" started-at="2020-08-08T22:59:58 IST" finished-at="2020-08-08T22:59:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="tearDown" is-config="true" duration-ms="1403" started-at="2020-08-08T22:59:58 IST" finished-at="2020-08-08T23:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="setUp" is-config="true" duration-ms="8614" started-at="2020-08-08T23:00:00 IST" finished-at="2020-08-08T23:00:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="flipkartLogoTest()[pri:2, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="flipkartLogoTest" duration-ms="243" started-at="2020-08-08T23:00:08 IST" finished-at="2020-08-08T23:00:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkartLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="tearDown" is-config="true" duration-ms="992" started-at="2020-08-08T23:00:09 IST" finished-at="2020-08-08T23:00:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="setUp" is-config="true" duration-ms="8794" started-at="2020-08-08T23:00:10 IST" finished-at="2020-08-08T23:00:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="loginTest" duration-ms="1026" started-at="2020-08-08T23:00:18 IST" finished-at="2020-08-08T23:00:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.LoginPageTest@e320068]" name="tearDown" is-config="true" duration-ms="993" started-at="2020-08-08T23:00:19 IST" finished-at="2020-08-08T23:00:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.flipkart.qa.tests.LoginPageTest -->
+      <class name="com.flipkart.qa.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="setUp" is-config="true" duration-ms="9636" started-at="2020-08-08T23:00:20 IST" finished-at="2020-08-08T23:00:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateElectronicsSectionTest()[pri:1, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="validateElectronicsSectionTest" duration-ms="177" started-at="2020-08-08T23:00:30 IST" finished-at="2020-08-08T23:00:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateElectronicsSectionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="tearDown" is-config="true" duration-ms="900" started-at="2020-08-08T23:00:30 IST" finished-at="2020-08-08T23:00:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="setUp" is-config="true" duration-ms="10070" started-at="2020-08-08T23:00:31 IST" finished-at="2020-08-08T23:00:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="searchAnItemTest()[pri:2, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="searchAnItemTest" duration-ms="3022" started-at="2020-08-08T23:00:41 IST" finished-at="2020-08-08T23:00:44 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANKIT-PC', ip: '172.17.69.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0f653eb85c8991773db7c58101d13ecd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANKIT-PC', ip: '172.17.69.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Ankit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0f653eb85c8991773db7c58101d13ecd
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+at com.flipkart.qa.pages.HomePage.searchAnItem(HomePage.java:46)
+at com.flipkart.qa.tests.HomePageTest.searchAnItemTest(HomePageTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAnItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="tearDown" is-config="true" duration-ms="990" started-at="2020-08-08T23:00:44 IST" finished-at="2020-08-08T23:00:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="setUp" is-config="true" duration-ms="9799" started-at="2020-08-08T23:00:45 IST" finished-at="2020-08-08T23:00:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateMyProfileTest()[pri:3, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="validateMyProfileTest" duration-ms="2353" started-at="2020-08-08T23:00:55 IST" finished-at="2020-08-08T23:00:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyProfileTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.HomePageTest@1f57539]" name="tearDown" is-config="true" duration-ms="1312" started-at="2020-08-08T23:00:57 IST" finished-at="2020-08-08T23:00:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.flipkart.qa.tests.HomePageTest -->
+      <class name="com.flipkart.qa.tests.ManageAddressesPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="setUp" is-config="true" duration-ms="13359" started-at="2020-08-08T23:01:26 IST" finished-at="2020-08-08T23:01:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateaddNewAddressTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="validateaddNewAddressTest" duration-ms="1548" started-at="2020-08-08T23:01:39 IST" data-provider="getFlipkartTestData" finished-at="2020-08-08T23:01:41 IST">
           <params>
             <param index="0">
               <value>
@@ -42,15 +196,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateaddNewAddressTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="tearDown" is-config="true" duration-ms="1771" started-at="2020-08-05T15:19:11 IST" finished-at="2020-08-05T15:19:13 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="tearDown" is-config="true" duration-ms="949" started-at="2020-08-08T23:01:41 IST" finished-at="2020-08-08T23:01:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="setUp" is-config="true" duration-ms="12813" started-at="2020-08-05T15:19:13 IST" finished-at="2020-08-05T15:19:26 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="setUp" is-config="true" duration-ms="12820" started-at="2020-08-08T23:01:42 IST" finished-at="2020-08-08T23:01:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateaddNewAddressTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="validateaddNewAddressTest" duration-ms="1635" started-at="2020-08-05T15:19:26 IST" data-provider="getFlipkartTestData" finished-at="2020-08-05T15:19:27 IST">
+        <test-method status="PASS" signature="validateaddNewAddressTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="validateaddNewAddressTest" duration-ms="1523" started-at="2020-08-08T23:01:55 IST" data-provider="getFlipkartTestData" finished-at="2020-08-08T23:01:56 IST">
           <params>
             <param index="0">
               <value>
@@ -69,7 +223,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[vishnu]]>
+                <![CDATA[raj comp]]>
               </value>
             </param>
             <param index="4">
@@ -81,15 +235,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateaddNewAddressTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="tearDown" is-config="true" duration-ms="888" started-at="2020-08-05T15:19:27 IST" finished-at="2020-08-05T15:19:28 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="tearDown" is-config="true" duration-ms="1303" started-at="2020-08-08T23:01:56 IST" finished-at="2020-08-08T23:01:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="setUp" is-config="true" duration-ms="12310" started-at="2020-08-05T15:19:28 IST" finished-at="2020-08-05T15:19:40 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="setUp" is-config="true" duration-ms="12414" started-at="2020-08-08T23:01:57 IST" finished-at="2020-08-08T23:02:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateaddNewAddressTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="validateaddNewAddressTest" duration-ms="1760" started-at="2020-08-05T15:19:40 IST" data-provider="getFlipkartTestData" finished-at="2020-08-05T15:19:42 IST">
+        <test-method status="PASS" signature="validateaddNewAddressTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="validateaddNewAddressTest" duration-ms="1603" started-at="2020-08-08T23:02:10 IST" data-provider="getFlipkartTestData" finished-at="2020-08-08T23:02:11 IST">
           <params>
             <param index="0">
               <value>
@@ -120,11 +274,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateaddNewAddressTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@394e1a0f]" name="tearDown" is-config="true" duration-ms="917" started-at="2020-08-05T15:19:42 IST" finished-at="2020-08-05T15:19:43 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.ManageAddressesPageTest@704a52ec]" name="tearDown" is-config="true" duration-ms="924" started-at="2020-08-08T23:02:11 IST" finished-at="2020-08-08T23:02:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.flipkart.qa.tests.ManageAddressesPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.flipkart.qa.tests.MyProfilePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.MyProfilePageTest@76f2b07d]" name="setUp" is-config="true" duration-ms="11962" started-at="2020-08-08T23:00:59 IST" finished-at="2020-08-08T23:01:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateManageAddressesLinkTest()[pri:1, instance:com.flipkart.qa.tests.MyProfilePageTest@76f2b07d]" name="validateManageAddressesLinkTest" duration-ms="433" started-at="2020-08-08T23:01:11 IST" finished-at="2020-08-08T23:01:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateManageAddressesLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.MyProfilePageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="956" started-at="2020-08-08T23:01:11 IST" finished-at="2020-08-08T23:01:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.tests.MyProfilePageTest@76f2b07d]" name="setUp" is-config="true" duration-ms="11371" started-at="2020-08-08T23:01:12 IST" finished-at="2020-08-08T23:01:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickOnManageAddressesLinkTest()[pri:2, instance:com.flipkart.qa.tests.MyProfilePageTest@76f2b07d]" name="clickOnManageAddressesLinkTest" duration-ms="519" started-at="2020-08-08T23:01:23 IST" finished-at="2020-08-08T23:01:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnManageAddressesLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.flipkart.qa.tests.MyProfilePageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="928" started-at="2020-08-08T23:01:24 IST" finished-at="2020-08-08T23:01:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.flipkart.qa.tests.MyProfilePageTest -->
+    </test> <!-- Flipkart Automation Test Cases -->
+  </suite> <!-- Flipkart Automation Test Suite -->
 </testng-results>

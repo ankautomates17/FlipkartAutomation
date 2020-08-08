@@ -26,8 +26,8 @@ public class ManageAddressesPage extends TestBase{
 	@FindBy(name = "addressLine1")
 	WebElement address;
 
-	@FindBy(xpath = "//div[@class='_2o59RR']/span[contains(text(),'Home')]")
-	WebElement homeRdBtn;
+//	@FindBy(xpath = "//div[@class='_2o59RR']/span[contains(text(),'Home')]")
+//	WebElement homeRdBtn;
 
 	@FindBy(xpath = "//button[contains(text(),'Save')]")
 	WebElement saveBtn;
@@ -43,9 +43,10 @@ public class ManageAddressesPage extends TestBase{
 		pincode.sendKeys(pCode);
 		locality.sendKeys(localaddrs);
 		address.sendKeys(addrs);
-		homeRdBtn.click();
+//		homeRdBtn.click();
 		saveBtn.click();
 		
 	}
+	
 
 }
